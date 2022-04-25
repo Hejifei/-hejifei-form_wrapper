@@ -1,7 +1,13 @@
 {
   "name": "hejifei_form_wrapper",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.15",
+  "description": "form component",
+  "repository": "https://github.com/Hejifei/form_wrapper",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": "antd form",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -10,22 +16,44 @@
     "@types/node": "^16.11.28",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
+    "sass-loader": "^12.6.0",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn clean && yarn build-ts && yarn build-css",
+    "clean": "rimraf ./dist",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "node-sass ./src/style/index.scss ./dist/index.css",
+    "build-normal": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "beauty": "npx prettier --write .",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -39,5 +67,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "@storybook/node-logger": "^6.4.22",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
+    "webpack": "^5.72.0"
   }
 }
