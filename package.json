@@ -1,6 +1,6 @@
 {
   "name": "hejifei_form_wrapper",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "description": "form component",
   "repository": "https://github.com/Hejifei/form_wrapper",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "build": "yarn clean && yarn build-ts && yarn build-css",
     "clean": "rimraf ./dist",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build-css": "node-sass ./src/style/index.scss ./dist/index.css",
+    "build-css": "node-sass ./src/components/my_button/index.scss ./dist/index.css",
     "build-normal": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

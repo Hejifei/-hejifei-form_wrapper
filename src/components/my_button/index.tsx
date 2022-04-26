@@ -1,6 +1,6 @@
 import * as React from 'react'
 import type { FC } from 'react'
-import styles from './index.scss'
+import styles from './index.module.scss'
 
 export interface IMyButtonProps {
   label: string

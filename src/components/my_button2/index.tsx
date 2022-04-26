@@ -1,6 +1,6 @@
 import React from 'react'
 import type { FC } from 'react'
-import styles from './index.scss'
+import styles from './index.less'
 
 export interface IMyButton2Props {
   label: string
