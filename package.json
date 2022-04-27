@@ -1,6 +1,6 @@
 {
   "name": "hejifei_form_wrapper",
-  "version": "1.0.17",
+  "version": "1.0.25",
   "description": "form component",
   "repository": "https://github.com/Hejifei/form_wrapper",
   "license": "MIT",
@@ -10,20 +10,23 @@
   "keywords": "antd form",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
+    "@testing-library/react": "12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "@types/antd": "^1.0.0",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.28",
-    "@types/react": "^18.0.6",
-    "@types/react-dom": "^18.0.2",
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.11",
+    "antd": "^4.20.1",
+    "babel-loader": "8.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "6.0.1",
     "prettier": "^2.6.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
     "sass-loader": "^12.6.0",
-    "typescript": "^4.6.3",
+    "typescript": "4.6.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -31,7 +34,7 @@
     "build": "yarn clean && yarn build-ts && yarn build-css",
     "clean": "rimraf ./dist",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build-css": "node-sass ./src/components/my_button/index.scss ./dist/index.css",
+    "build-css": "node-sass ./src/index.scss ./dist/index.css",
     "build-normal": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -79,6 +82,6 @@
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
-    "webpack": "^5.72.0"
+    "webpack": "4.44.2"
   }
 }

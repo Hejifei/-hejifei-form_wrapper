@@ -1,18 +1,26 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import reportWebVitals from './reportWebVitals';
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import './index.scss'
+// import MyButton from './components/my_button'
+// import MyButton2 from './components/my_button2'
 
-// const root = ReactDOM.createRoot(
-//   document.getElementById('root') as HTMLElement
-// );
+// const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 // root.render(
+//   <React.StrictMode>
+//     <div>index</div>
+//   </React.StrictMode>
+// )
+
+// ReactDOM.render(
 //   <React.StrictMode>
 //     <div>
 //       index
+//       <MyButton label='1' />
+//       <MyButton2 label='2' />
 //     </div>
-//   </React.StrictMode>
-// );
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// )
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
