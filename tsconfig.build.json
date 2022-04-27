@@ -6,6 +6,7 @@
     "declaration": true,
     "jsx": "react",
     "moduleResolution": "Node",
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
