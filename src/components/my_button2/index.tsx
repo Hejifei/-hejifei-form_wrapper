@@ -1,6 +1,6 @@
 import React from 'react'
+import { DatePicker } from 'antd'
 import type { FC } from 'react'
-import styles from './index.less'
 
 export interface IMyButton2Props {
   label: string
@@ -8,9 +8,12 @@ export interface IMyButton2Props {
 
 const MyButton2: FC<IMyButton2Props> = ({ label }) => {
   return (
-    <button className={styles.myButtonWrapper}>
-      this is my custom Button 2222: {label}
-    </button>
+    <>
+      <DatePicker />
+      <button className={'myButtonWrapper'}>
+        this is my custom Button 2222: {label}
+      </button>
+    </>
   )
 }
 

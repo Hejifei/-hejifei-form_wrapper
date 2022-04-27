@@ -1,6 +1,6 @@
 import * as React from 'react'
 import type { FC } from 'react'
-import styles from './index.module.scss'
+import { Input } from 'antd'
 
 export interface IMyButtonProps {
   label: string
@@ -8,9 +8,12 @@ export interface IMyButtonProps {
 
 const MyButton: FC<IMyButtonProps> = ({ label }) => {
   return (
-    <button className={styles.myButtonWrapper}>
-      this is my custom Button: {label}
-    </button>
+    <>
+      <Input />
+      <button className={'myButtonWrapper'}>
+        this is my custom Button: {label}
+      </button>
+    </>
   )
 }
 
