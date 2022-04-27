@@ -22,8 +22,8 @@
 // import MyButton from "./components/my_button";
 // import MyButton2 from "./components/my_button2";
 
-export { default as MyButton } from './components/my_button'
-export { default as MyButton2 } from './components/my_button2'
+export {default as MyButton} from './components/my_button'
+export {default as MyButton2} from './components/my_button2'
 // export default {
 //   MyButton,
 //   MyButton2,

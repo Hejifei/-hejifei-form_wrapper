@@ -2,7 +2,7 @@ module.exports = {
   // 强制使用单引号
   singleQuote: true,
   // 大括号内的首尾需要空格
-  bracketSpacing: true,
+  bracketSpacing: false,
   // 末尾不需要逗号
   trailingComma: 'es5',
   // 箭头函数参数括号

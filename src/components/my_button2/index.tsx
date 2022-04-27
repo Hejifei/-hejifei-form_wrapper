@@ -1,12 +1,12 @@
 import React from 'react'
-import { DatePicker } from 'antd'
-import type { FC } from 'react'
+import {DatePicker} from 'antd'
+import type {FC} from 'react'
 
 export interface IMyButton2Props {
   label: string
 }
 
-const MyButton2: FC<IMyButton2Props> = ({ label }) => {
+const MyButton2: FC<IMyButton2Props> = ({label}) => {
   return (
     <>
       <DatePicker />

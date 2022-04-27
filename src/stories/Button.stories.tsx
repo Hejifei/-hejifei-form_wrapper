@@ -1,5 +1,5 @@
 import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import {ComponentStory, ComponentMeta} from '@storybook/react'
 
 import MyButton from '../components/my_button'
 
@@ -9,7 +9,7 @@ export default {
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: {control: 'color'},
   },
 } as ComponentMeta<typeof MyButton>
 
